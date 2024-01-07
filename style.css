@@ -1,0 +1,169 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+  
+  body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+
+  }
+  
+  .container {
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    max-width: 50rem;
+    margin-top: 10rem;
+    
+  }
+
+  .column {
+    padding: 3.2rem;
+
+  }
+  
+  .column--sedans {
+    background-color: hsl(31, 77%, 52%);
+    
+  }
+  
+  .column--suvs {
+    background-color: hsl(184, 100%, 22%);
+   
+  }
+  
+  .column--luxury {
+    background-color: hsl(179, 100%, 13%);
+
+  }
+  
+  h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+  }
+  
+  p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    padding-bottom: 4rem;
+  }
+  
+  a.btn {
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      font-size: 0.7rem;
+      width: 70%;
+      border-radius: 35rem;
+      padding: 0.6rem;
+      transition-duration: .3s;
+      border: 1px solid transparent;
+      text-align: center;
+      font-family: 'Lexend Deca';     
+      background-color: hsl(0, 0%, 95%);
+      text-decoration: none;          
+  }
+  
+  a.btn-sedan {
+    color: hsl(31, 77%, 52%);
+  }
+  
+  a.btn-suvs {
+      color: hsl(184, 100%, 22%);
+  }
+  
+  a.btn-luxury {
+    color: hsl(179, 100%, 13%);
+  }
